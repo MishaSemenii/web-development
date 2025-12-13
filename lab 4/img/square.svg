@@ -1,0 +1,29 @@
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coolGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      
+      <stop offset="0%" stop-color="#9D6BF5">
+        <animate attributeName="offset" values="-1; 1" dur="4s" repeatCount="indefinite" />
+      </stop>
+
+      <stop offset="25%" stop-color="#5E15F4">
+        <animate attributeName="offset" values="-0.75; 1.25" dur="4s" repeatCount="indefinite" />
+      </stop>
+
+      <stop offset="50%" stop-color="#1B66F5">
+        <animate attributeName="offset" values="-0.5; 1.5" dur="4s" repeatCount="indefinite" />
+      </stop>
+
+      <stop offset="75%" stop-color="#F716F5">
+        <animate attributeName="offset" values="-0.25; 1.75" dur="4s" repeatCount="indefinite" />
+      </stop>
+
+      <stop offset="100%" stop-color="#9D6BF5">
+        <animate attributeName="offset" values="0; 2" dur="4s" repeatCount="indefinite" />
+      </stop>
+
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="100" height="100" fill="url(#coolGradient)" rx="15" />
+</svg>

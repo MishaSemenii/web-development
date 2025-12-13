@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Технології веб-розробки - Тестова сторінка Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      /* Глобальний стиль */
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .content-wrapper {
+        flex: 1;
+      }
+
+      /* Бокова панель */
+      .sidebar {
+        background-color: #f8f9fa;
+        padding: 20px;
+        min-height: 500px;
+      }
+
+      /* Основний контент */
+      .main-content {
+        padding: 20px;
+      }
+
+      /* Нижня панель */
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+        margin-top: auto;
+      }
+
+      /* Список */
+      .list-group-item {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Верхня частина (Header) -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-bootstrap-fill"></i> WebTech
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  ><i class="bi bi-house-door"></i> Головна</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-info-circle"></i> Про нас</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="bi bi-book"></i> Курси
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HTML/CSS</a></li>
+                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                  <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Всі курси</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-envelope"></i> Контакти</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Основний контент -->
+    <div class="content-wrapper">
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <!-- Ліва колонка (Sidebar) -->
+          <div class="col-lg-3 col-md-4">
+            <div class="sidebar">
+              <h5><i class="bi bi-list-ul"></i> Навігація</h5>
+              <ul class="list-group">
+                <li class="list-group-item active">
+                  <i class="bi bi-star-fill"></i> Головна сторінка
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-newspaper"></i> Новини
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-people"></i> Спільнота
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-gear"></i> Налаштування
+                </li>
+              </ul>
+
+              <div class="mt-4">
+                <h6><i class="bi bi-tags"></i> Категорії</h6>
+                <select class="form-select" aria-label="Виберіть категорію">
+                  <option selected>Виберіть категорію</option>
+                  <option value="1">Веб-дизайн</option>
+                  <option value="2">Frontend розробка</option>
+                  <option value="3">Backend розробка</option>
+                  <option value="4">UI/UX дизайн</option>
+                </select>
+              </div>
+
+              <div class="mt-4">
+                <h6><i class="bi bi-palette"></i> Теми</h6>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="theme"
+                    id="light"
+                    checked
+                  />
+                  <label class="form-check-label" for="light">
+                    Світла тема
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="theme"
+                    id="dark"
+                  />
+                  <label class="form-check-label" for="dark">
+                    Темна тема
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Центральна колонка (Main Content) -->
+          <div class="col-lg-9 col-md-8">
+            <div class="main-content">
+              <h1 class="mb-4">
+                <i class="bi bi-laptop"></i> Технології веб-розробки та дизайну
+              </h1>
+
+              <!-- Alert -->
+              <div
+                class="alert alert-info alert-dismissible fade show"
+                role="alert"
+              >
+                <i class="bi bi-info-circle-fill"></i>
+                <strong>Важливо!</strong> Це тестова сторінка для демонстрації
+                можливостей Bootstrap.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                ></button>
+              </div>
+
+              <!-- Cards -->
+              <div class="row mb-4">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <i class="bi bi-code-slash display-4 text-primary"></i>
+                      <h5 class="card-title mt-3">Розробка</h5>
+                      <p class="card-text">
+                        Вивчайте сучасні технології веб-розробки
+                      </p>
+                      <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <i class="bi bi-brush display-4 text-success"></i>
+                      <h5 class="card-title mt-3">Дизайн</h5>
+                      <p class="card-text">
+                        Створюйте красиві та зручні інтерфейси
+                      </p>
+                      <a href="#" class="btn btn-success">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <i class="bi bi-phone display-4 text-warning"></i>
+                      <h5 class="card-title mt-3">Адаптивність</h5>
+                      <p class="card-text">
+                        Адаптуйте сайти під будь-які пристрої
+                      </p>
+                      <a href="#" class="btn btn-warning">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Form -->
+              <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                  <i class="bi bi-envelope-paper"></i> Форма зворотного зв'язку
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <label for="firstName" class="form-label">Ім'я</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="firstName"
+                          placeholder="Введіть ваше ім'я"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="example@email.com"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="subject" class="form-label">Тема</label>
+                      <select class="form-select" id="subject">
+                        <option selected>Виберіть тему</option>
+                        <option value="1">Питання про курс</option>
+                        <option value="2">Технічна підтримка</option>
+                        <option value="3">Співпраця</option>
+                        <option value="4">Інше</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label"
+                        >Повідомлення</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        rows="4"
+                        placeholder="Напишіть ваше повідомлення"
+                      ></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="agreement"
+                      />
+                      <label class="form-check-label" for="agreement">
+                        Я погоджуюся з умовами обробки персональних даних
+                      </label>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-send"></i> Відправити
+                      </button>
+                      <button type="reset" class="btn btn-secondary">
+                        <i class="bi bi-arrow-counterclockwise"></i> Скинути
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Buttons showcase -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <i class="bi bi-ui-checks"></i> Приклади кнопок
+                </div>
+                <div class="card-body">
+                  <h6>Основні кнопки:</h6>
+                  <button type="button" class="btn btn-primary m-1">
+                    Primary
+                  </button>
+                  <button type="button" class="btn btn-secondary m-1">
+                    Secondary
+                  </button>
+                  <button type="button" class="btn btn-success m-1">
+                    Success
+                  </button>
+                  <button type="button" class="btn btn-danger m-1">
+                    Danger
+                  </button>
+                  <button type="button" class="btn btn-warning m-1">
+                    Warning
+                  </button>
+                  <button type="button" class="btn btn-info m-1">Info</button>
+
+                  <h6 class="mt-3">Кнопки з іконками:</h6>
+                  <button type="button" class="btn btn-outline-primary m-1">
+                    <i class="bi bi-download"></i> Завантажити
+                  </button>
+                  <button type="button" class="btn btn-outline-success m-1">
+                    <i class="bi bi-check-circle"></i> Підтвердити
+                  </button>
+                  <button type="button" class="btn btn-outline-danger m-1">
+                    <i class="bi bi-trash"></i> Видалити
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Нижня частина (Footer) -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5><i class="bi bi-building"></i> Про нас</h5>
+            <p>
+              Навчальна платформа для вивчення веб-технологій та дизайну.
+              Bootstrap 5 демонстрація.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5><i class="bi bi-link-45deg"></i> Корисні посилання</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Документація</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Приклади</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Підтримка</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5><i class="bi bi-share"></i> Соціальні мережі</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white"
+                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-white" />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 WebTech. Всі права захищені.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

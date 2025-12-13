@@ -1,0 +1,92 @@
+/* Скидання */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f2f4f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Шапка */
+.header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Профіль */
+.profile {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.photo-box img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-box h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.details {
+    list-style: none;
+    margin-top: 18px;
+}
+
+.details li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.details span {
+    font-weight: 600;
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Адаптивність */
+@media(max-width: 700px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .photo-box img {
+        width: 200px;
+        height: 200px;
+    }
+}

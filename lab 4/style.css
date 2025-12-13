@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #fff0e6, #ffe4d9);
+    color: #333;
+    min-height: 100vh;
+}
+
+.page-header {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+    color: #d9534f;
+}
+
+.image-grid {
+    max-width: 95%; 
+    margin: 0 auto 50px;
+    padding: 20px;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    gap: 20px; 
+    
+    flex-wrap: nowrap; 
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    
+    width: 100%;
+    max-width: 260px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item figcaption {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #e0e0e0;
+}
+
+@keyframes breathing {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); } 
+    100% { transform: scale(1); }
+}
+
+.css-anim {
+    animation: breathing 3s infinite ease-in-out;
+}
