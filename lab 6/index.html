@@ -43,7 +43,7 @@
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/ERg8UnPo7Rg?si=Hl7ivz1n5n2jJktj&modestbranding=1&origin=https://yourdomain.com"
+          src="https://www.youtube.com/embed/plVmAmQaNpc?start=1"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -71,13 +71,25 @@
       </section>
 
       <section>
-        <iframe
-          src="https://www.ukrinform.ua/rss/news"
-          width="400"
-          height="300"
-          style="border: none"
-        >
-        </iframe>
+        <h2>Точний час та астрономічні дані</h2>
+        
+        <div style="text-align: center; margin: 20px 0; background: #f9f9f9; padding: 20px; border-radius: 10px;">
+            <a href="https://time.is/Kovel" id="time_is_link" rel="nofollow" style="font-size:24px; text-decoration: none; color: #333; font-weight: bold;">Час у Ковелі:</a>
+            <br>
+            <span id="Kovel_z713" style="font-size:36px; font-weight: bold; color: #0056b3;"></span>
+            
+            <script src="https://widget.time.is/uk.js"></script>
+            <script>
+                time_is_widget.init({
+                    Kovel_z713: {
+                        template: "TIME<br><span style='font-size:18px; color:#555'>DATE</span><br><span style='font-size:16px; color:#777'>SUN</span>",
+                        date_format: "dayname, dnum monthname year р.",
+                        sun_format: "Схід: srhour:srminute | Захід: sshour:ssminute<br>Тривалість дня: dlhours год dlminutes хв",
+                        coords: "51.2152600,24.7086700"
+                    }
+                });
+            </script>
+        </div>
       </section>
     </main>
 
