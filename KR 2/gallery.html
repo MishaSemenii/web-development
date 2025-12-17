@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive - Галерея</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/741/741407.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://sinoptik.ua/resources/informer/css/informer.css">
+</head>
+<body> 
+    <header class="site-header">
+        <div class="container header-flex">
+            <div><a href="index.html" class="logo"><i class="fas fa-car-side"></i>AutoDrive</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">Сервіс</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider"><i class="fas fa-sun icon-sun"></i><i class="fas fa-moon icon-moon"></i></div></label></div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container reveal">
+        <h1 class="section-title">Автосвіт у фото</h1>
+        
+        <div class="gallery-layout">
+            <div>
+                <div class="main-slider-container">
+                    <img src="img/cars1.jpg" class="main-slide active" alt="Авто 1">
+                    <img src="img/cars2.jpg" class="main-slide" alt="Авто 2">
+                    <img src="img/cars3.jpg" class="main-slide" alt="Авто 3">
+                </div>
+                
+                <div class="mini-slider-wrapper">
+                    <h3 style="margin-bottom: 15px; color: var(--primary-green);">Деталі та інтер'єр</h3>
+                    <div class="mini-slider-container">
+                        <button class="slider-btn prev-btn">❮</button>
+                        <button class="slider-btn next-btn">❯</button>
+                        <img src="img/car1.jpg" class="mini-slide active" alt="Салон">
+                        <img src="img/car2.jpg" class="mini-slide" alt="Кермо">
+                        <img src="img/car3.jpg" class="mini-slide" alt="Колесо">
+                        <img src="img/car4.jpg" class="mini-slide" alt="Двигун">
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                
+                <div class="sin-informer sin-informer_font-Arial sin-informer_theme-light" data-lang="uk">
+                    <div class="sin-informer__header">
+                        <a class="sin-informer__logo-link" href="https://sinoptik.ua" target="_blank" rel="nofollow">
+                            <img class="sin-informer__logo-image" width="66" height="20" src="https://sinoptik.ua/resources/informer/assets/icons/logo.png" alt="Sinoptik - logo">
+                        </a>
+                        <p class="sin-informer__date">Погода на найближчий час</p>
+                        <p class="sin-informer__time" data-format="24"><span class="sin-informer__time-icon"></span></p>
+                    </div>
+                    <div class="sin-informer__main sin-informer__main_inline">
+                        <a class="sin-informer__entry" href="https://sinoptik.ua/pohoda/kovel" target="_blank" rel="nofollow">
+                            <p class="sin-informer__location"> Ковель </p>
+                            
+                            <div class="sin-informer__primary">
+                                <p class="sin-informer__local-time"></p>
+                                <p class="sin-informer__temp" data-unit="c"></p>
+                                <div class="sin-informer__condition" data-icon-path="https://sinoptik.ua/resources/informer/assets/icons/conditions"></div>
+                            </div>
+                            
+                            <div class="sin-informer__secondary">
+                                <p class="sin-informer__marker sin-informer__marker_wind" data-unit="ms" data-suffix="м/с" title="Вітер"><span class="sin-informer__marker-icon"></span></p>
+                                <p class="sin-informer__marker sin-informer__marker_humidity" title="Волога"><span class="sin-informer__marker-icon"></span></p>
+                                <p class="sin-informer__marker sin-informer__marker_pressure" data-unit="mm-hg" data-suffix="мм" title="Тиск"><span class="sin-informer__marker-icon"></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sin-informer__footer"> Погода на 10 днів від <a class="sin-informer__domain-link" href="https://sinoptik.ua/pohoda/kovel/10-dniv" target="_blank" rel="nofollow"> sinoptik.ua </a></div>
+                </div>
+                <script src="https://sinoptik.ua/api/informer/content?loc=PSflPUfHPQPOCn9rPQhObUNr&cem=cMoSGk=S2MEocroYPQju3kixCMoJZrbtcMjR2r2UPMhvPnAuPu"></script>
+                
+                <div class="map-card">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5000.412373415957!2d24.699797989169074!3d51.19685230000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47243b9b8a9cd67d%3A0x1dbabe6045fe51c0!2z0KHQotCeIEF2dG9zdGFy!5e0!3m2!1suk!2sua!4v1765980343607!5m2!1suk!2sua" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-label">
+                        <i class="fas fa-map-marker-alt" style="color: #e74c3c;"></i> Найближче СТО: Auto Drive (Ковель)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><i class="fas fa-car-side"></i> AutoDrive</div>
+                <p>Твій гід у світі автомобілів. Ми допомагаємо обрати найкраще, обслуговувати якісно та насолоджуватись дорогою.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn sb-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn sb-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn sb-telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="social-btn sb-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Навігація</h4>
+                <ul>
+                    <li><a href="index.html">Головна сторінка</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">База знань</a></li>
+                    <li><a href="gallery.html">Фотогалерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">×</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

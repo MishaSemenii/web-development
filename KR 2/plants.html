@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive - Каталог авто</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/741/741407.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <header class="site-header">
+        <div class="container header-flex">
+            <div><a href="index.html" class="logo"><i class="fas fa-car-side"></i>AutoDrive</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="plants.html" class="active">Каталог авто</a></li>
+                    <li><a href="care.html">Сервіс</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider"><i class="fas fa-sun icon-sun"></i><i class="fas fa-moon icon-moon"></i></div></label></div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container reveal">
+        <h1 class="section-title">Каталог автомобілів</h1>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Всі</button>
+            <button class="filter-btn" data-filter="sedan">Седани</button>
+            <button class="filter-btn" data-filter="suv">Позашляховики</button>
+            <button class="filter-btn" data-filter="sport">Спорткари</button>
+        </div>
+
+        <div class="plant-grid">
+            <div class="plant-card" data-category="sedan" data-desc="Комфортний бізнес-седан для міста та подорожей." data-engine="2.0L Turbo Diesel" data-transmission="Автомат 8-ст">
+                <img src="img/bmw 5.jpg" class="plant-img" alt="BMW 5 Series">
+                <div class="plant-info">
+                    <h3>BMW 5 Series</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+            
+            <div class="plant-card" data-category="sport" data-desc="Ікона спорткарів. Швидкість та стиль." data-engine="3.0L Twin-Turbo" data-transmission="Робот PDK">
+                <img src="img/porshe 911.jpg" class="plant-img" alt="Porsche 911">
+                <div class="plant-info">
+                    <h3>Porsche 911</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="plant-card" data-category="suv" data-desc="Надійний позашляховик для будь-яких умов." data-engine="4.5L V8 Diesel" data-transmission="Автомат 6-ст">
+                <img src="img/land rover.jpg" class="plant-img" alt="Toyota Land Cruiser">
+                <div class="plant-info">
+                    <h3>Toyota Land Cruiser</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="plant-card" data-category="sedan" data-desc="Електричний седан майбутнього." data-engine="Електродвигун (500 к.с.)" data-transmission="Редуктор">
+                <img src="img/tesla s.jpg" class="plant-img" alt="Tesla Model S">
+                <div class="plant-info">
+                    <h3>Tesla Model S</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="plant-card" data-category="suv" data-desc="Преміальний кросовер з німецьким характером." data-engine="3.0L V6 TDI" data-transmission="Tiptronic">
+                <img src="img/audi q8.jpg" class="plant-img" alt="Audi Q8">
+                <div class="plant-info">
+                    <h3>Audi Q8</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+            
+            <div class="plant-card" data-category="sedan" data-desc="Класика надійності та комфорту." data-engine="2.5L Hybrid" data-transmission="Варіатор e-CVT">
+                <img src="img/toyota camry.jpg" class="plant-img" alt="Toyota Camry">
+                <div class="plant-info">
+                    <h3>Toyota Camry</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+            
+            <div class="plant-card" data-category="sport" data-desc="Американська м'язова класика." data-engine="5.0L V8 Coyote" data-transmission="Механіка 6-ст">
+                <img src="img/ford mustang gt.jpg" class="plant-img" alt="Ford Mustang">
+                <div class="plant-info">
+                    <h3>Ford Mustang GT</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+            
+            <div class="plant-card" data-category="suv" data-desc="Король бездоріжжя в новому стилі." data-engine="4.0L V8 Biturbo" data-transmission="9G-Tronic">
+                <img src="img/mercedes g.jpg" class="plant-img" alt="Mercedes G-Class">
+                <div class="plant-info">
+                    <h3>Mercedes G-Class</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="plant-card" data-category="sport" data-desc="Італійський темперамент та неймовірна динаміка." data-engine="5.2L V10" data-transmission="Робот LDF 7-ст">
+                <img src="img/huracan.jpg" class="plant-img" alt="Lamborghini Huracan">
+                <div class="plant-info">
+                    <h3>Lamborghini Huracan</h3>
+                    <div style="color: var(--primary-green); margin-top: 10px; font-weight: bold;">Детальніше <i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="card" style="margin-top: 60px; padding: 40px;">
+            <h2 style="text-align: center; color: var(--primary-green); margin-bottom: 30px; font-size: 2rem;">Як обрати своє авто?</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 25px;">
+                <div>
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-road" style="color: var(--accent-wood);"></i> Умови експлуатації
+                    </h4>
+                    <p style="margin: 0; color: var(--text-muted);">
+                        Плануєте їздити тільки містом? Обирайте компактні седани або електрокари. 
+                        Любите подорожі в гори? Вам потрібен надійний SUV з повним приводом.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-gas-pump" style="color: var(--accent-wood);"></i> Економічність
+                    </h4>
+                    <p style="margin: 0; color: var(--text-muted);">
+                        Зверніть увагу на витрати пального. Гібриди ідеальні для заторів, дизелі — для траси, 
+                        а бензинові двигуни дарують більше емоцій від керування.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-shield-alt" style="color: var(--accent-wood);"></i> Безпека (Родина та діти)
+                    </h4>
+                    <p style="margin: 0; color: var(--text-muted);">
+                        Маєте дітей або домашніх улюбленців? Зверніть увагу на наявність кріплень ISOFIX, просторий салон 
+                        та рейтинг безпеки Euro NCAP. Безпека родини — понад усе.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-user-check" style="color: var(--accent-wood);"></i> Ваш досвід
+                    </h4>
+                    <p style="margin: 0; color: var(--text-muted);">
+                        Початківцям радимо авто з гарним оглядом, парктроніками та помірною потужністю. 
+                        Спорткари із заднім приводом потребують впевнених навичок водіння, особливо взимку.
+                    </p>
+                </div>
+            </div>
+
+            <div style="background-color: #e3f2fd; border-left: 5px solid var(--primary-green); padding: 20px; border-radius: 8px; margin-top: 30px; color: #2c3e50;">
+                <h5 style="margin: 0 0 5px 0; font-size: 1rem; color: var(--primary-green); display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-lightbulb"></i> Важливо:
+                </h5>
+                <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                    Кожне авто унікальне! Навіть найнадійніший "японець" чи "німець" потребує регулярного сервісу та любові власника. 
+                    Вчасна заміна мастила — запорука довгого життя двигуна.
+                </p>
+            </div>
+        </section>
+
+        <section class="reveal" style="margin-top: 60px; margin-bottom: 100px; text-align: center;">
+            <h2 class="section-title">Відео-огляд</h2>
+            <div class="card" style="padding: 0; overflow: hidden; max-width: 900px; margin: 0 auto;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                    <iframe 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                        src="https://www.youtube.com/embed/EDMOL1MUocQ" 
+                        title="Відео огляд авто" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="plantModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2 id="modalTitle" style="color: var(--primary-green); margin-bottom: 10px;"></h2>
+            <p id="modalDesc" style="font-size: 1.1rem; margin-bottom: 20px;"></p>
+            <div style="background: var(--bg-color); padding: 20px; border-radius: 15px;">
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <i class="fas fa-cogs" style="color: #3498db; width: 30px; font-size: 1.2rem;"></i>
+                    <div><strong>Двигун:</strong> <span id="modalEngine"></span></div>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <i class="fas fa-code-branch" style="color: #f1c40f; width: 30px; font-size: 1.2rem;"></i>
+                    <div><strong>КПП:</strong> <span id="modalTransmission"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><i class="fas fa-car-side"></i> AutoDrive</div>
+                <p>Твій гід у світі автомобілів. Ми допомагаємо обрати найкраще, обслуговувати якісно та насолоджуватись дорогою.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn sb-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn sb-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn sb-telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="social-btn sb-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Навігація</h4>
+                <ul>
+                    <li><a href="index.html">Головна сторінка</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">База знань</a></li>
+                    <li><a href="gallery.html">Фотогалерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

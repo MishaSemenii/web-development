@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive - Головна</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/741/741407.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <header class="site-header">
+        <div class="container header-flex">
+            <div><a href="index.html" class="logo"><i class="fas fa-car-side"></i>AutoDrive</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Головна</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">Сервіс</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span class="slider"><i class="fas fa-sun icon-sun"></i><i class="fas fa-moon icon-moon"></i></span>
+                </label>
+            </div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container reveal" style="padding: 80px 0; text-align: center;">
+            <div class="hero-split" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                <div style="text-align: left;">
+                    <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; color: var(--primary-green);">Обери автомобіль своєї мрії</h1>
+                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px;">
+                        Автомобіль — це не просто засіб пересування. Це свобода, комфорт та емоції. Ми допоможемо підібрати ідеальне авто для ваших потреб.
+                    </p>
+                    <a href="plants.html" class="btn">Переглянути каталог <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800" style="width:100%; border-radius: 20px; box-shadow: var(--shadow);" alt="Автомобіль">
+                </div>
+            </div>
+        </div>
+
+        <section class="container reveal">
+            <h2 class="section-title">Корисні статті</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                
+                <a href="care.html" class="card article-card" style="display: block; text-decoration: none; color: inherit;">
+                    <img src="img/car crash4.jpg" style="border-radius: 10px; margin-bottom: 15px;" alt="Полив">
+                    <span style="font-size: 0.8rem; color: var(--accent-wood); font-weight: bold;">ТЕХНІКА</span>
+                    <h3>Економія пального</h3>
+                    <p style="color: var(--text-muted);">Основні помилки водіїв, що призводять до перевитрат. Як їздити економно та ефективно...</p>
+                    <div style="color: var(--primary-green); font-weight: bold; margin-top: 10px;">Читати далі →</div>
+                </a>
+
+                <a href="plants.html" class="card article-card" style="display: block; text-decoration: none; color: inherit;">
+                    <img src="img/car interier.jpg" style="border-radius: 10px; margin-bottom: 15px;" alt="Світло">
+                    <span style="font-size: 0.8rem; color: var(--accent-wood); font-weight: bold;">ІНТЕР'ЄР</span>
+                    <h3>Комфорт у салоні</h3>
+                    <p style="color: var(--text-muted);">Як підібрати правильні аксесуари для вашого авто, щоб подорожі стали зручнішими...</p>
+                    <div style="color: var(--primary-green); font-weight: bold; margin-top: 10px;">Читати далі →</div>
+                </a>
+
+                <a href="care.html" class="card article-card" style="display: block; text-decoration: none; color: inherit;">
+                    <img src="img/car maslo.jpg" style="border-radius: 10px; margin-bottom: 15px;" alt="Добрива">
+                    <span style="font-size: 0.8rem; color: var(--accent-wood); font-weight: bold;">СЕРВІС</span>
+                    <h3>Заміна мастила</h3>
+                    <p style="color: var(--text-muted);">Коли та яке мастило обирати для двигуна, щоб авто служило вірою і правдою роками...</p>
+                    <div style="color: var(--primary-green); font-weight: bold; margin-top: 10px;">Читати далі →</div>
+                </a>
+
+            </div>
+        </section>
+
+        <div class="container reveal" style="margin: 80px auto;">
+            <div class="card" style="padding: 0; overflow: hidden;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                    <iframe 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                        src="https://www.youtube.com/embed/DN_LwszgzHU" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><i class="fas fa-car-side"></i> AutoDrive</div>
+                <p>Твій гід у світі автомобілів. Ми допомагаємо обрати найкраще, обслуговувати якісно та насолоджуватись дорогою.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn sb-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn sb-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn sb-telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="social-btn sb-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Навігація</h4>
+                <ul>
+                    <li><a href="index.html">Головна сторінка</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">База знань</a></li>
+                    <li><a href="gallery.html">Фотогалерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-btn"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

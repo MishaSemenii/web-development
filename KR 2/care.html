@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive - Сервіс</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/741/741407.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> <header class="site-header">
+        <div class="container header-flex">
+            <div><a href="index.html" class="logo"><i class="fas fa-car-side"></i>AutoDrive</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html" class="active">Сервіс</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider"><i class="fas fa-sun icon-sun"></i><i class="fas fa-moon icon-moon"></i></div></label></div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container reveal">
+        <h1 class="section-title">Енциклопедія водія</h1>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+            <div class="card">
+                <i class="fas fa-oil-can" style="font-size: 2.5rem; color: #3498db; margin-bottom: 15px;"></i>
+                <h3>Заміна рідин</h3>
+                <p>Двигун — серце авто. Міняйте мастило кожні 8-10 тис. км. Не забувайте про гальмівну рідину та антифриз.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-car-battery" style="font-size: 2.5rem; color: #f1c40f; margin-bottom: 15px;"></i>
+                <h3>Акумулятор</h3>
+                <p>Слідкуйте за зарядом, особливо взимку. Якщо авто важко заводиться, перевірте клеми на окислення.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-tools" style="font-size: 2.5rem; color: var(--primary-green); margin-bottom: 15px;"></i>
+                <h3>Ходова частина</h3>
+                <p>Сторонні стуки на ямах? Це сигнал перевірити підвіску. Своєчасний ремонт важелів збереже шини.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 20px; color: var(--text-color);">Календар обслуговування</h2>
+        <div style="overflow-x: auto;">
+            <table class="care-table">
+                <thead>
+                    <tr>
+                        <th>Сезон</th>
+                        <th>Шини</th>
+                        <th>Рідини</th>
+                        <th>Особливості</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Весна</strong></td>
+                        <td>Заміна на літні</td>
+                        <td>Перевірка фреону</td>
+                        <td>Мийка дна від солі, полірування</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Літо</strong></td>
+                        <td>Контроль тиску</td>
+                        <td>Омивач (літній)</td>
+                        <td>Захист салону від сонця</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Осінь</strong></td>
+                        <td>Балансування</td>
+                        <td>Антифриз</td>
+                        <td>Перевірка двірників та світла</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Зима</strong></td>
+                        <td>Заміна на зимові</td>
+                        <td>Омивач (зимовий)</td>
+                        <td>Обробка ущільнювачів силіконом</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="warning-box">
+            <div class="warning-title">
+                <i class="fas fa-exclamation-triangle"></i> Check Engine
+            </div>
+            <p style="margin: 0;">
+                Якщо на панелі приладів загорівся індикатор "Check Engine", тиск мастила або температура двигуна пішла в червону зону — 
+                <strong>негайно зупиніться!</strong> Продовження руху може призвести до капітального ремонту двигуна.
+            </p>
+        </div>
+
+        <h2 style="text-align: center; color: var(--text-color);">Часті запитання (FAQ)</h2>
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question">Чому вібрує кермо? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Найчастіша причина — розбалансування коліс або бруд на дисках. Також варто перевірити гальмівні диски на викривлення.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Як зменшити витрати пального? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Уникайте різких розгонів, перевіряйте тиск у шинах, не возіть зайвий вантаж та використовуйте якісне пальне.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Коли міняти ремінь ГРМ? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Регламент залежить від авто, зазвичай це кожні 60-100 тис. км. Розрив ременя може знищити двигун.</div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><i class="fas fa-car-side"></i> AutoDrive</div>
+                <p>Твій гід у світі автомобілів. Ми допомагаємо обрати найкраще, обслуговувати якісно та насолоджуватись дорогою.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn sb-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn sb-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn sb-telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="social-btn sb-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Навігація</h4>
+                <ul>
+                    <li><a href="index.html">Головна сторінка</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">База знань</a></li>
+                    <li><a href="gallery.html">Фотогалерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

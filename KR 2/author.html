@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive - Автор</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/741/741407.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <header class="site-header">
+        <div class="container header-flex">
+            <div><a href="index.html" class="logo"><i class="fas fa-car-side"></i>AutoDrive</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">Сервіс</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="author.html" class="active">Про автора</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider"><i class="fas fa-sun icon-sun"></i><i class="fas fa-moon icon-moon"></i></div></label></div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container reveal">
+        <h1 class="section-title">Розробник проекту</h1>
+        
+        <div class="author-grid">
+            <div class="card author-card">
+                <img src="img/kobe bryant.jpg" class="author-photo" alt="Студент">
+                
+                <h2 style="color: var(--primary-green); margin-bottom: 5px;">Семеній Михайло</h2>
+                <p style="color: var(--text-muted); font-weight: bold;">Студент НУ "Львівська політехніка"</p>
+                
+                <div style="text-align: left; margin-top: 30px;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: var(--text-color); border-bottom: 2px solid var(--light-green); padding-bottom: 10px;">Про проект:</h3>
+                    <p style="text-align: justify; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                        Привіт! Мене звати Семеній Михайло. Цей сайт створено в рамках лабораторної роботи з дисципліни "Технології веб-розробки".
+                        <br><br>
+                        Моя мета — розробити зручний каталог автомобілів, де користувачі можуть знайти інформацію про різні моделі, дізнатися поради по догляду та переглянути галерею.
+                    </p>
+                    
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--text-color);">Використані технології:</h3>
+                    <ul style="list-style: none; display: flex; gap: 10px; flex-wrap: wrap;">
+                        <li style="background: #e34c26; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">HTML5</li>
+                        <li style="background: #264de4; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">CSS3</li>
+                        <li style="background: #f0db4f; color: black; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">JavaScript / jQuery</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2 style="text-align: center; color: var(--primary-green); margin-bottom: 20px;">Напишіть мені</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: var(--text-muted);">Маєте пропозиції щодо покращення сайту?</p>
+                
+                <form action="#" method="POST" onsubmit="alert('Дякуємо! Повідомлення відправлено (демо-режим).'); return false;">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я</label>
+                        <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Текст повідомлення..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Надіслати <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><i class="fas fa-car-side"></i> AutoDrive</div>
+                <p>Твій гід у світі автомобілів. Ми допомагаємо обрати найкраще, обслуговувати якісно та насолоджуватись дорогою.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn sb-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn sb-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn sb-telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="social-btn sb-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Навігація</h4>
+                <ul>
+                    <li><a href="index.html">Головна сторінка</a></li>
+                    <li><a href="plants.html">Каталог авто</a></li>
+                    <li><a href="care.html">База знань</a></li>
+                    <li><a href="gallery.html">Фотогалерея</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
